@@ -19,7 +19,7 @@ os_name = sys.platform
 if os_name == 'win32': #running on Clark's Laptop
    project_path = Path(__file__).parent.absolute()
    path_to_bng = os.path.join(project_path, 'BioNetGen-2.5.1')
-   path_to_data_save = 'C:/Users/clark/OneDrive/Documents/Files/Read_Research/Research_Data/BioNetGen_Sim/Sims'
+   path_to_data_save = 'F:\Working_Files\Read_Research\Research_Data\BioNetGen_Sim\Sims'
    
 elif os_name == 'linux': #running on HPC3
    project_path = Path(__file__).parent.absolute()
@@ -42,7 +42,7 @@ dt_string = now.strftime("%H_%M_%S_%d-%m-%Y")
 simulation_data_folder = 'Sim_' + dt_string
 
 #temp foldername
-simulation_data_folder = 'PM_10_1_0.1'
+#simulation_data_folder = 'test'
 
 os.makedirs(os.path.join(path_to_data_save, simulation_data_folder)) #Estalish new data directory
 os.mkdir(os.path.join(path_to_data_save, simulation_data_folder, "cdat")) #Estalish cdat directory under data directory
