@@ -1,37 +1,47 @@
 function [] = GenerateBNGLModel_fromNetwork(SimN)
-%this script translates a gene regulatory network with Boolean logic into a
-%biochemical reaction network. The script generates a .bngl file which
+%this script translates a gene regulatory network with given Pluripotency genes.
+%The script generates a .bngl file which
 %encodes these reactions as input to the BioNetGen stochastic simulation
 %software. The reason for having a script like this is that it is tedious
 %to write the reaction network bngl file manually. The script input is a
 %matrix of gene-gene interactions. "0" - no interaction "1" - activating,
 %"-1" - repressing, where the column is the source and the row is the
 %target. Then, the target gene is considered "active" when at least one
-%activator is bound, and no repressors are bound to it.
+%activator is bound, and no repressors are bound to it. In addition, it
+%samples parameters from known parameter distributions 
 
+%SimN = number of files to be generated
 NetworkFile=['Nanog_Network' num2str(SimN) '.mat'];
 NumGenes=8; %number of genes in the network
 Network=zeros(8);
 %column: source gene. row: target gene
-Network(1,1)=1; Network(2,1)=1; Network(5,1)=1;
-Network(7,2)=-1;
-%rest of rows need to be filled in!
+%order of genes: Gata6,Gcnf,CDX2,KLF4,Nanog,Pbx1,Oct4,Sox2
+%Pluripotency network translated from: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006336
+Network=[1 0 0 0 -1 0 -1 0; 
+    1 0 1 0 0 0 0 0;
+    0 0 1 0 -1 0 -1 0;
+    0 0 0 0 1 0 1 1;
+    -1 0 0 1 -1 1 0 0;
+    0 0 0 0 1 0 0 0;
+    0 -1 -1 0 0 0 0 0;
+    0 0 0 0 0 0 0 0];
+
 save(NetworkFile,'Network');
 
 %order of genes: Gata6,Gcnf,CDX2,KLF4,Nanog,Pbx1,Oct4,Sox2
-GeneList={'A','B','C','D','E','F','G','H'};%,'I','J','K','L'};
-RegList={'a','b','c','d','e','f','g','h'};%,'i','j','k','l'};
-RNAList={'rA','rB','rC','rD','rE','rF','rG','rH'};%,'rI','rJ','rK','rL'};
+GeneList={'Gata6','Gcnf','Cdx2','Klf4','Nanog','Pbx1','Oct4','Sox2'};
+RegList={'gata6','gcnf','cdx2','klf4','nanog','pbx1','oct4','sox2'};; %regulators
+RNAList={'rGata6','rGcnf','rCdx2','rKlf4','rNanog','rPbx1','rOct4','rSox2'};
 
-%samlpling the binding parameters
+%sampling the binding parameters
 a=1;
 b=5;
-f_order=a+(b-a).*rand(1,NumGenes^2);%uniform distribiton of f vals in log-space
+f_order=a+(b-a).*rand(1,2*NumGenes);%uniform distribiton of f vals in log-space
 f=10.^f_order;
 
 a=log10(f/100);
 b=4;
-h_order=a+(b-a).*rand(1,NumGenes^2);%randi([-1,2],1,NumGenes);
+h_order=a+(b-a).*rand(1,2*NumGenes); %randi([-1,2],1,NumGenes);
 h=10.^h_order;
 
 save h h
@@ -53,9 +63,25 @@ k=1;
 C=2; % degree of cooperativity in TF-binding (binding rate is proportional to mRNA^B)
 
 %needs to be modified! Currently hard-coded for two-gene parameters
-ParNames={'haA', 'hbA', 'haB', 'hbB', 'faA', 'fbA', 'faB', 'fbB','g0','g1A','g1B','g2A','g2B','k','C'};
-ParValues=[h,f,g0,g1,g2,k,C];
+% ParNames={'haA', 'hbA', 'haB', 'hbB', 'faA', 'fbA', 'faB', 'fbB','g0','g1A','g1B','g2A','g2B','k','C'};
+% ParValues=[h,f,g0,g1,g2,k,C];
+ParNames = [];
 
+%Modifying so that parameters are created for all genes
+
+
+ParList = {'ha', 'hr', 'fa','fb', 'g1', 'g2', 'g0', 'k', 'C'};
+for i = 1:length(ParList)-3
+    for j = 1:NumGenes
+        GeneName = GeneList(j);
+        ParameterName = strcat(ParList(i),GeneName);
+        ParNames = [ParNames, ParameterName];
+    end
+end
+ParNames = [ParNames, 'g0', 'k', 'C'];
+ParValues=[h,f,g1,g2,g0,k,C];        
+        
+        
 InitialCopyNumber=round(rand(NumGenes,1))*g2(1); %randomly initializing a subset of genes as 'on'
 
 %set the Bionetgen file and open for writing
@@ -113,12 +139,12 @@ end
 fprintf(fid,'end species\n');
 
 %this loop sets the observables, which will be written to the trajectory
-%file (.gdat) during the simulation. Currently, it only keeps track of the
-%RNA species
+%file (.gdat) during the simulation. 
 fprintf(fid,'begin observables \n');
 for i=1:NumGenes
     RNAName=RNAList{i};
-    fprintf(fid,['    Molecules ' RNAName ' ' RNAName ' \n']);
+    GeneName=GeneList{i};
+    fprintf(fid,['    Molecules ' GeneName ' ' RNAName ' \n']);
 end
 fprintf(fid,'end observables \n');
 

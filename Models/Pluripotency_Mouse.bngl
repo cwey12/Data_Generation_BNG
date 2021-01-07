@@ -4,7 +4,7 @@ begin parameters
 	hr 1 #DNA binding rate for repressors
 	f 1E2 #DNA unbinding rate
 	goff 0.1 #Transcription factor growth rate when gene is off
-        gon 7 #Transcription factor growth rate when gene is on
+    gon 7 #Transcription factor growth rate when gene is on
 	k 1 #Transcription factor death rate
 end parameters
 begin molecule types
