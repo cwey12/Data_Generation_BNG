@@ -1,0 +1,374 @@
+begin model
+begin parameters 
+    hgata6Gata6 8.720387e+00 
+    hgata6Gcnf 3.316254e+03 
+    hgata6Cdx2 4.132032e+02 
+    hgata6Klf4 1.090761e+00 
+    hgata6Nanog 7.586954e+01 
+    hgata6Pbx1 4.524301e+00 
+    hgata6Oct4 4.304251e+01 
+    hgata6Sox2 6.985775e+02 
+    hgcnfGata6 1.205938e+03 
+    hgcnfGcnf 2.721434e+03 
+    hgcnfCdx2 1.248490e+02 
+    hgcnfKlf4 1.458860e+02 
+    hgcnfNanog 3.876680e+03 
+    hgcnfPbx1 4.587269e+02 
+    hgcnfOct4 9.335301e-01 
+    hgcnfSox2 6.519330e+00 
+    hcdx2Gata6 9.488254e+00 
+    hcdx2Gcnf 1.319297e+02 
+    hcdx2Cdx2 8.009945e+01 
+    hcdx2Klf4 5.526196e+02 
+    hcdx2Nanog 3.867341e+01 
+    hcdx2Pbx1 5.402958e+00 
+    hcdx2Oct4 3.272259e+00 
+    hcdx2Sox2 6.240787e+03 
+    hklf4Gata6 5.758028e+02 
+    hklf4Gcnf 2.942166e+02 
+    hklf4Cdx2 5.274925e+01 
+    hklf4Klf4 6.050435e+00 
+    hklf4Nanog 5.700176e+01 
+    hklf4Pbx1 5.445655e+03 
+    hklf4Oct4 5.148871e+02 
+    hklf4Sox2 1.486143e+03 
+    hnanogGata6 6.973302e+00 
+    hnanogGcnf 6.483114e+00 
+    hnanogCdx2 2.957482e+02 
+    hnanogKlf4 9.231965e+03 
+    hnanogNanog 1.431455e+00 
+    hnanogPbx1 3.106521e+01 
+    hnanogOct4 1.725718e+01 
+    hnanogSox2 6.107676e-01 
+    hpbx1Gata6 2.580452e+03 
+    hpbx1Gcnf 5.115934e+01 
+    hpbx1Cdx2 9.028469e+03 
+    hpbx1Klf4 2.075435e+03 
+    hpbx1Nanog 5.748764e+02 
+    hpbx1Pbx1 1.323923e+02 
+    hpbx1Oct4 6.063635e+02 
+    hpbx1Sox2 1.808780e+01 
+    hoct4Gata6 2.659436e+03 
+    hoct4Gcnf 2.583095e+03 
+    hoct4Cdx2 1.509239e+03 
+    hoct4Klf4 4.607629e+02 
+    hoct4Nanog 1.668299e+01 
+    hoct4Pbx1 1.415986e+03 
+    hoct4Oct4 3.082910e+03 
+    hoct4Sox2 1.680753e+03 
+    hsox2Gata6 5.363415e+01 
+    hsox2Gcnf 1.824735e+01 
+    hsox2Cdx2 2.210511e+01 
+    hsox2Klf4 4.657440e+02 
+    hsox2Nanog 7.913945e+01 
+    hsox2Pbx1 3.887713e+02 
+    hsox2Oct4 2.191639e+03 
+    hsox2Sox2 1.813258e+01 
+    fgata6Gata6 3.375451e+01 
+    fgata6Gcnf 7.778541e+03 
+    fgata6Cdx2 2.763210e+01 
+    fgata6Klf4 2.951015e+01 
+    fgata6Nanog 3.654868e+03 
+    fgata6Pbx1 2.066602e+02 
+    fgata6Oct4 4.123330e+03 
+    fgata6Sox2 9.920324e+03 
+    fgcnfGata6 2.151508e+03 
+    fgcnfGcnf 9.122824e+03 
+    fgcnfCdx2 8.695762e+01 
+    fgcnfKlf4 8.706231e+03 
+    fgcnfNanog 7.627709e+04 
+    fgcnfPbx1 2.935764e+04 
+    fgcnfOct4 2.212779e+01 
+    fgcnfSox2 2.922446e+02 
+    fcdx2Gata6 2.997749e+02 
+    fcdx2Gcnf 5.496850e+03 
+    fcdx2Cdx2 2.464714e+03 
+    fcdx2Klf4 1.436997e+04 
+    fcdx2Nanog 2.955369e+02 
+    fcdx2Pbx1 6.669779e+01 
+    fcdx2Oct4 2.221602e+01 
+    fcdx2Sox2 1.223871e+04 
+    fklf4Gata6 6.648108e+01 
+    fklf4Gcnf 3.573440e+02 
+    fklf4Cdx2 1.611069e+03 
+    fklf4Klf4 8.237833e+01 
+    fklf4Nanog 3.696260e+03 
+    fklf4Pbx1 8.668052e+02 
+    fklf4Oct4 4.049320e+01 
+    fklf4Sox2 1.341924e+04 
+    fnanogGata6 2.525953e+01 
+    fnanogGcnf 1.500601e+02 
+    fnanogCdx2 8.902092e+01 
+    fnanogKlf4 1.328890e+03 
+    fnanogNanog 2.322710e+01 
+    fnanogPbx1 4.180822e+02 
+    fnanogOct4 2.626546e+01 
+    fnanogSox2 2.812781e+01 
+    fpbx1Gata6 1.373130e+04 
+    fpbx1Gcnf 1.466497e+02 
+    fpbx1Cdx2 2.594978e+03 
+    fpbx1Klf4 7.205940e+04 
+    fpbx1Nanog 5.369576e+02 
+    fpbx1Pbx1 6.011859e+03 
+    fpbx1Oct4 1.077450e+04 
+    fpbx1Sox2 5.377362e+02 
+    foct4Gata6 4.187860e+03 
+    foct4Gcnf 2.748022e+01 
+    foct4Cdx2 5.432996e+04 
+    foct4Klf4 5.621384e+01 
+    foct4Nanog 1.160688e+02 
+    foct4Pbx1 1.553535e+04 
+    foct4Oct4 8.921032e+02 
+    foct4Sox2 1.190784e+04 
+    fsox2Gata6 3.837311e+02 
+    fsox2Gcnf 1.235251e+02 
+    fsox2Cdx2 1.409089e+01 
+    fsox2Klf4 4.933779e+03 
+    fsox2Nanog 5.227064e+02 
+    fsox2Pbx1 6.411460e+02 
+    fsox2Oct4 2.750608e+03 
+    fsox2Sox2 1.728276e+01 
+    g1Gata6 1.515867e+00 
+    g1Gcnf 1.331793e+00 
+    g1Cdx2 2.748286e+00 
+    g1Klf4 2.231177e+00 
+    g1Nanog 2.658327e+00 
+    g1Pbx1 2.680471e+00 
+    g1Oct4 6.362354e-01 
+    g1Sox2 2.303656e+00 
+    g2Gata6 1.144008e+01 
+    g2Gcnf 2.210164e+00 
+    g2Cdx2 7.155623e+00 
+    g2Klf4 4.299439e+00 
+    g2Nanog 9.850886e+00 
+    g2Pbx1 2.086865e+01 
+    g2Oct4 4.744746e+01 
+    g2Sox2 5.951398e+01 
+    g0 0.000000e+00 
+    k 1.000000e+00 
+    C 2.000000e+00 
+end parameters 
+begin molecule types 
+    Gata6(p1~0~1,p2~0~1,p3~0~1,p4~0~1,p5~0~1,p6~0~1,p7~0~1,p8~0~1) 
+    Gcnf(p1~0~1,p2~0~1,p3~0~1,p4~0~1,p5~0~1,p6~0~1,p7~0~1,p8~0~1) 
+    Cdx2(p1~0~1,p2~0~1,p3~0~1,p4~0~1,p5~0~1,p6~0~1,p7~0~1,p8~0~1) 
+    Klf4(p1~0~1,p2~0~1,p3~0~1,p4~0~1,p5~0~1,p6~0~1,p7~0~1,p8~0~1) 
+    Nanog(p1~0~1,p2~0~1,p3~0~1,p4~0~1,p5~0~1,p6~0~1,p7~0~1,p8~0~1) 
+    Pbx1(p1~0~1,p2~0~1,p3~0~1,p4~0~1,p5~0~1,p6~0~1,p7~0~1,p8~0~1) 
+    Oct4(p1~0~1,p2~0~1,p3~0~1,p4~0~1,p5~0~1,p6~0~1,p7~0~1,p8~0~1) 
+    Sox2(p1~0~1,p2~0~1,p3~0~1,p4~0~1,p5~0~1,p6~0~1,p7~0~1,p8~0~1) 
+    rGata6() 
+    rGcnf() 
+    rCdx2() 
+    rKlf4() 
+    rNanog() 
+    rPbx1() 
+    rOct4() 
+    rSox2() 
+end molecule types
+begin species 
+    Gata6(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~0,p8~0) 1 
+    Gcnf(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~0,p8~0) 1 
+    Cdx2(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~0,p8~0) 1 
+    Klf4(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~0,p8~0) 1 
+    Nanog(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~0,p8~0) 1 
+    Pbx1(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~0,p8~0) 1 
+    Oct4(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~0,p8~0) 1 
+    Sox2(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~0,p8~0) 1 
+    rGata6() 5 
+    rGcnf() 2 
+    rCdx2() 1 
+    rKlf4() 9 
+    rNanog() 2 
+    rPbx1() 2 
+    rOct4() 8 
+    rSox2() 10 
+end species
+begin observables 
+    Molecules Gata6 rGata6() 
+    Molecules Gcnf rGcnf() 
+    Molecules Cdx2 rCdx2() 
+    Molecules Klf4 rKlf4() 
+    Molecules Nanog rNanog() 
+    Molecules Pbx1 rPbx1() 
+    Molecules Oct4 rOct4() 
+    Molecules Sox2 rSox2() 
+end observables 
+begin functions 
+    hFuncgata6Gata6  hgata6Gata6*rGata6()^C
+    hFuncgcnfGata6  hgcnfGata6*rGata6()^C
+    hFunccdx2Gata6  hcdx2Gata6*rGata6()^C
+    hFuncklf4Gata6  hklf4Gata6*rGata6()^C
+    hFuncnanogGata6  hnanogGata6*rGata6()^C
+    hFuncpbx1Gata6  hpbx1Gata6*rGata6()^C
+    hFuncoct4Gata6  hoct4Gata6*rGata6()^C
+    hFuncsox2Gata6  hsox2Gata6*rGata6()^C
+    hFuncgata6Gcnf  hgata6Gcnf*rGcnf()^C
+    hFuncgcnfGcnf  hgcnfGcnf*rGcnf()^C
+    hFunccdx2Gcnf  hcdx2Gcnf*rGcnf()^C
+    hFuncklf4Gcnf  hklf4Gcnf*rGcnf()^C
+    hFuncnanogGcnf  hnanogGcnf*rGcnf()^C
+    hFuncpbx1Gcnf  hpbx1Gcnf*rGcnf()^C
+    hFuncoct4Gcnf  hoct4Gcnf*rGcnf()^C
+    hFuncsox2Gcnf  hsox2Gcnf*rGcnf()^C
+    hFuncgata6Cdx2  hgata6Cdx2*rCdx2()^C
+    hFuncgcnfCdx2  hgcnfCdx2*rCdx2()^C
+    hFunccdx2Cdx2  hcdx2Cdx2*rCdx2()^C
+    hFuncklf4Cdx2  hklf4Cdx2*rCdx2()^C
+    hFuncnanogCdx2  hnanogCdx2*rCdx2()^C
+    hFuncpbx1Cdx2  hpbx1Cdx2*rCdx2()^C
+    hFuncoct4Cdx2  hoct4Cdx2*rCdx2()^C
+    hFuncsox2Cdx2  hsox2Cdx2*rCdx2()^C
+    hFuncgata6Klf4  hgata6Klf4*rKlf4()^C
+    hFuncgcnfKlf4  hgcnfKlf4*rKlf4()^C
+    hFunccdx2Klf4  hcdx2Klf4*rKlf4()^C
+    hFuncklf4Klf4  hklf4Klf4*rKlf4()^C
+    hFuncnanogKlf4  hnanogKlf4*rKlf4()^C
+    hFuncpbx1Klf4  hpbx1Klf4*rKlf4()^C
+    hFuncoct4Klf4  hoct4Klf4*rKlf4()^C
+    hFuncsox2Klf4  hsox2Klf4*rKlf4()^C
+    hFuncgata6Nanog  hgata6Nanog*rNanog()^C
+    hFuncgcnfNanog  hgcnfNanog*rNanog()^C
+    hFunccdx2Nanog  hcdx2Nanog*rNanog()^C
+    hFuncklf4Nanog  hklf4Nanog*rNanog()^C
+    hFuncnanogNanog  hnanogNanog*rNanog()^C
+    hFuncpbx1Nanog  hpbx1Nanog*rNanog()^C
+    hFuncoct4Nanog  hoct4Nanog*rNanog()^C
+    hFuncsox2Nanog  hsox2Nanog*rNanog()^C
+    hFuncgata6Pbx1  hgata6Pbx1*rPbx1()^C
+    hFuncgcnfPbx1  hgcnfPbx1*rPbx1()^C
+    hFunccdx2Pbx1  hcdx2Pbx1*rPbx1()^C
+    hFuncklf4Pbx1  hklf4Pbx1*rPbx1()^C
+    hFuncnanogPbx1  hnanogPbx1*rPbx1()^C
+    hFuncpbx1Pbx1  hpbx1Pbx1*rPbx1()^C
+    hFuncoct4Pbx1  hoct4Pbx1*rPbx1()^C
+    hFuncsox2Pbx1  hsox2Pbx1*rPbx1()^C
+    hFuncgata6Oct4  hgata6Oct4*rOct4()^C
+    hFuncgcnfOct4  hgcnfOct4*rOct4()^C
+    hFunccdx2Oct4  hcdx2Oct4*rOct4()^C
+    hFuncklf4Oct4  hklf4Oct4*rOct4()^C
+    hFuncnanogOct4  hnanogOct4*rOct4()^C
+    hFuncpbx1Oct4  hpbx1Oct4*rOct4()^C
+    hFuncoct4Oct4  hoct4Oct4*rOct4()^C
+    hFuncsox2Oct4  hsox2Oct4*rOct4()^C
+    hFuncgata6Sox2  hgata6Sox2*rSox2()^C
+    hFuncgcnfSox2  hgcnfSox2*rSox2()^C
+    hFunccdx2Sox2  hcdx2Sox2*rSox2()^C
+    hFuncklf4Sox2  hklf4Sox2*rSox2()^C
+    hFuncnanogSox2  hnanogSox2*rSox2()^C
+    hFuncpbx1Sox2  hpbx1Sox2*rSox2()^C
+    hFuncoct4Sox2  hoct4Sox2*rSox2()^C
+    hFuncsox2Sox2  hsox2Sox2*rSox2()^C
+end functions 
+begin reaction rules 
+    Gata6(p1~0,p2,p3,p4,p5,p6,p7,p8) <-> Gata6(p1~1,p2,p3,p4,p5,p6,p7,p8) hFuncgata6Gata6,fgata6Gata6
+    Gata6(p1,p2,p3,p4,p5~0,p6,p7,p8) <-> Gata6(p1,p2,p3,p4,p5~1,p6,p7,p8) hFuncnanogGata6,fnanogGata6
+    Gata6(p1,p2,p3,p4,p5,p6,p7,p8~0) <-> Gata6(p1,p2,p3,p4,p5,p6,p7,p8~1) hFuncsox2Gata6,fsox2Gata6
+    Gcnf(p1~0,p2,p3,p4,p5,p6,p7,p8) <-> Gcnf(p1~1,p2,p3,p4,p5,p6,p7,p8) hFuncgata6Gcnf,fgata6Gcnf
+    Gcnf(p1,p2,p3~0,p4,p5,p6,p7,p8) <-> Gcnf(p1,p2,p3~1,p4,p5,p6,p7,p8) hFunccdx2Gcnf,fcdx2Gcnf
+    Cdx2(p1,p2,p3~0,p4,p5,p6,p7,p8) <-> Cdx2(p1,p2,p3~1,p4,p5,p6,p7,p8) hFunccdx2Cdx2,fcdx2Cdx2
+    Cdx2(p1,p2,p3,p4,p5~0,p6,p7,p8) <-> Cdx2(p1,p2,p3,p4,p5~1,p6,p7,p8) hFuncnanogCdx2,fnanogCdx2
+    Cdx2(p1,p2,p3,p4,p5,p6,p7~0,p8) <-> Cdx2(p1,p2,p3,p4,p5,p6,p7~1,p8) hFuncoct4Cdx2,foct4Cdx2
+    Klf4(p1,p2,p3,p4,p5~0,p6,p7,p8) <-> Klf4(p1,p2,p3,p4,p5~1,p6,p7,p8) hFuncnanogKlf4,fnanogKlf4
+    Klf4(p1,p2,p3,p4,p5,p6,p7~0,p8) <-> Klf4(p1,p2,p3,p4,p5,p6,p7~1,p8) hFuncoct4Klf4,foct4Klf4
+    Klf4(p1,p2,p3,p4,p5,p6,p7,p8~0) <-> Klf4(p1,p2,p3,p4,p5,p6,p7,p8~1) hFuncsox2Klf4,fsox2Klf4
+    Nanog(p1~0,p2,p3,p4,p5,p6,p7,p8) <-> Nanog(p1~1,p2,p3,p4,p5,p6,p7,p8) hFuncgata6Nanog,fgata6Nanog
+    Nanog(p1,p2,p3,p4~0,p5,p6,p7,p8) <-> Nanog(p1,p2,p3,p4~1,p5,p6,p7,p8) hFuncklf4Nanog,fklf4Nanog
+    Nanog(p1,p2,p3,p4,p5~0,p6,p7,p8) <-> Nanog(p1,p2,p3,p4,p5~1,p6,p7,p8) hFuncnanogNanog,fnanogNanog
+    Nanog(p1,p2,p3,p4,p5,p6~0,p7,p8) <-> Nanog(p1,p2,p3,p4,p5,p6~1,p7,p8) hFuncpbx1Nanog,fpbx1Nanog
+    Pbx1(p1,p2,p3,p4,p5~0,p6,p7,p8) <-> Pbx1(p1,p2,p3,p4,p5~1,p6,p7,p8) hFuncnanogPbx1,fnanogPbx1
+    Oct4(p1,p2~0,p3,p4,p5,p6,p7,p8) <-> Oct4(p1,p2~1,p3,p4,p5,p6,p7,p8) hFuncgcnfOct4,fgcnfOct4
+    Oct4(p1,p2,p3~0,p4,p5,p6,p7,p8) <-> Oct4(p1,p2,p3~1,p4,p5,p6,p7,p8) hFunccdx2Oct4,fcdx2Oct4
+    Oct4(p1,p2,p3,p4,p5,p6,p7~0,p8) <-> Oct4(p1,p2,p3,p4,p5,p6,p7~1,p8) hFuncoct4Oct4,foct4Oct4
+    Oct4(p1,p2,p3,p4,p5,p6,p7,p8~0) <-> Oct4(p1,p2,p3,p4,p5,p6,p7,p8~1) hFuncsox2Oct4,fsox2Oct4
+    Sox2(p1,p2,p3,p4,p5,p6,p7~0,p8) <-> Sox2(p1,p2,p3,p4,p5,p6,p7~1,p8) hFuncoct4Sox2,foct4Sox2
+    Sox2(p1,p2,p3,p4,p5,p6,p7,p8~0) <-> Sox2(p1,p2,p3,p4,p5,p6,p7,p8~1) hFuncsox2Sox2,fsox2Sox2
+    Gata6(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~0,p8~0) -> Gata6(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~0,p8~0) + rGata6() g1Gata6
+    Gata6(p1~1,p2~0,p3~0,p4~0,p5~0,p6~0,p7~0,p8~0) -> Gata6(p1~1,p2~0,p3~0,p4~0,p5~0,p6~0,p7~0,p8~0) + rGata6() g2Gata6
+    Gata6(p1~0,p2~0,p3~0,p4~0,p5~1,p6~0,p7~0,p8~0) -> Gata6(p1~0,p2~0,p3~0,p4~0,p5~1,p6~0,p7~0,p8~0) + rGata6() g0
+    Gata6(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~0,p8~1) -> Gata6(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~0,p8~1) + rGata6() g2Gata6
+    Gata6(p1~1,p2~0,p3~0,p4~0,p5~1,p6~0,p7~0,p8~0) -> Gata6(p1~1,p2~0,p3~0,p4~0,p5~1,p6~0,p7~0,p8~0) + rGata6() g1Gata6
+    Gata6(p1~1,p2~0,p3~0,p4~0,p5~0,p6~0,p7~0,p8~1) -> Gata6(p1~1,p2~0,p3~0,p4~0,p5~0,p6~0,p7~0,p8~1) + rGata6() g2Gata6
+    Gata6(p1~1,p2~0,p3~0,p4~0,p5~0,p6~0,p7~0,p8~1) -> Gata6(p1~1,p2~0,p3~0,p4~0,p5~0,p6~0,p7~0,p8~1) + rGata6() g2Gata6
+    Gata6(p1~0,p2~0,p3~0,p4~0,p5~1,p6~0,p7~0,p8~1) -> Gata6(p1~0,p2~0,p3~0,p4~0,p5~1,p6~0,p7~0,p8~1) + rGata6() g1Gata6
+    Gata6(p1~1,p2~0,p3~0,p4~0,p5~1,p6~0,p7~0,p8~1) -> Gata6(p1~1,p2~0,p3~0,p4~0,p5~1,p6~0,p7~0,p8~1) + rGata6() g2Gata6
+    rGata6() -> 0 k
+    Gcnf(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~0,p8~0) -> Gcnf(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~0,p8~0) + rGcnf() g1Gcnf
+    Gcnf(p1~1,p2~0,p3~0,p4~0,p5~0,p6~0,p7~0,p8~0) -> Gcnf(p1~1,p2~0,p3~0,p4~0,p5~0,p6~0,p7~0,p8~0) + rGcnf() g2Gcnf
+    Gcnf(p1~0,p2~0,p3~1,p4~0,p5~0,p6~0,p7~0,p8~0) -> Gcnf(p1~0,p2~0,p3~1,p4~0,p5~0,p6~0,p7~0,p8~0) + rGcnf() g2Gcnf
+    Gcnf(p1~1,p2~0,p3~1,p4~0,p5~0,p6~0,p7~0,p8~0) -> Gcnf(p1~1,p2~0,p3~1,p4~0,p5~0,p6~0,p7~0,p8~0) + rGcnf() g2Gcnf
+    Gcnf(p1~1,p2~0,p3~1,p4~0,p5~0,p6~0,p7~0,p8~0) -> Gcnf(p1~1,p2~0,p3~1,p4~0,p5~0,p6~0,p7~0,p8~0) + rGcnf() g2Gcnf
+    rGcnf() -> 0 k
+    Cdx2(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~0,p8~0) -> Cdx2(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~0,p8~0) + rCdx2() g1Cdx2
+    Cdx2(p1~0,p2~0,p3~1,p4~0,p5~0,p6~0,p7~0,p8~0) -> Cdx2(p1~0,p2~0,p3~1,p4~0,p5~0,p6~0,p7~0,p8~0) + rCdx2() g2Cdx2
+    Cdx2(p1~0,p2~0,p3~0,p4~0,p5~1,p6~0,p7~0,p8~0) -> Cdx2(p1~0,p2~0,p3~0,p4~0,p5~1,p6~0,p7~0,p8~0) + rCdx2() g0
+    Cdx2(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~1,p8~0) -> Cdx2(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~1,p8~0) + rCdx2() g0
+    Cdx2(p1~0,p2~0,p3~1,p4~0,p5~1,p6~0,p7~0,p8~0) -> Cdx2(p1~0,p2~0,p3~1,p4~0,p5~1,p6~0,p7~0,p8~0) + rCdx2() g1Cdx2
+    Cdx2(p1~0,p2~0,p3~1,p4~0,p5~0,p6~0,p7~1,p8~0) -> Cdx2(p1~0,p2~0,p3~1,p4~0,p5~0,p6~0,p7~1,p8~0) + rCdx2() g1Cdx2
+    Cdx2(p1~0,p2~0,p3~0,p4~0,p5~1,p6~0,p7~1,p8~0) -> Cdx2(p1~0,p2~0,p3~0,p4~0,p5~1,p6~0,p7~1,p8~0) + rCdx2() g0
+    Cdx2(p1~0,p2~0,p3~1,p4~0,p5~1,p6~0,p7~1,p8~0) -> Cdx2(p1~0,p2~0,p3~1,p4~0,p5~1,p6~0,p7~1,p8~0) + rCdx2() g0
+    rCdx2() -> 0 k
+    Klf4(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~0,p8~0) -> Klf4(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~0,p8~0) + rKlf4() g1Klf4
+    Klf4(p1~0,p2~0,p3~0,p4~0,p5~1,p6~0,p7~0,p8~0) -> Klf4(p1~0,p2~0,p3~0,p4~0,p5~1,p6~0,p7~0,p8~0) + rKlf4() g2Klf4
+    Klf4(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~1,p8~0) -> Klf4(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~1,p8~0) + rKlf4() g2Klf4
+    Klf4(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~0,p8~1) -> Klf4(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~0,p8~1) + rKlf4() g2Klf4
+    Klf4(p1~0,p2~0,p3~0,p4~0,p5~1,p6~0,p7~1,p8~0) -> Klf4(p1~0,p2~0,p3~0,p4~0,p5~1,p6~0,p7~1,p8~0) + rKlf4() g2Klf4
+    Klf4(p1~0,p2~0,p3~0,p4~0,p5~1,p6~0,p7~1,p8~0) -> Klf4(p1~0,p2~0,p3~0,p4~0,p5~1,p6~0,p7~1,p8~0) + rKlf4() g2Klf4
+    Klf4(p1~0,p2~0,p3~0,p4~0,p5~1,p6~0,p7~0,p8~1) -> Klf4(p1~0,p2~0,p3~0,p4~0,p5~1,p6~0,p7~0,p8~1) + rKlf4() g2Klf4
+    Klf4(p1~0,p2~0,p3~0,p4~0,p5~1,p6~0,p7~0,p8~1) -> Klf4(p1~0,p2~0,p3~0,p4~0,p5~1,p6~0,p7~0,p8~1) + rKlf4() g2Klf4
+    Klf4(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~1,p8~1) -> Klf4(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~1,p8~1) + rKlf4() g2Klf4
+    Klf4(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~1,p8~1) -> Klf4(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~1,p8~1) + rKlf4() g2Klf4
+    Klf4(p1~0,p2~0,p3~0,p4~0,p5~1,p6~0,p7~1,p8~1) -> Klf4(p1~0,p2~0,p3~0,p4~0,p5~1,p6~0,p7~1,p8~1) + rKlf4() g2Klf4
+    Klf4(p1~0,p2~0,p3~0,p4~0,p5~1,p6~0,p7~1,p8~1) -> Klf4(p1~0,p2~0,p3~0,p4~0,p5~1,p6~0,p7~1,p8~1) + rKlf4() g2Klf4
+    Klf4(p1~0,p2~0,p3~0,p4~0,p5~1,p6~0,p7~1,p8~1) -> Klf4(p1~0,p2~0,p3~0,p4~0,p5~1,p6~0,p7~1,p8~1) + rKlf4() g2Klf4
+    rKlf4() -> 0 k
+    Nanog(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~0,p8~0) -> Nanog(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~0,p8~0) + rNanog() g1Nanog
+    Nanog(p1~1,p2~0,p3~0,p4~0,p5~0,p6~0,p7~0,p8~0) -> Nanog(p1~1,p2~0,p3~0,p4~0,p5~0,p6~0,p7~0,p8~0) + rNanog() g0
+    Nanog(p1~0,p2~0,p3~0,p4~1,p5~0,p6~0,p7~0,p8~0) -> Nanog(p1~0,p2~0,p3~0,p4~1,p5~0,p6~0,p7~0,p8~0) + rNanog() g2Nanog
+    Nanog(p1~0,p2~0,p3~0,p4~0,p5~1,p6~0,p7~0,p8~0) -> Nanog(p1~0,p2~0,p3~0,p4~0,p5~1,p6~0,p7~0,p8~0) + rNanog() g0
+    Nanog(p1~0,p2~0,p3~0,p4~0,p5~0,p6~1,p7~0,p8~0) -> Nanog(p1~0,p2~0,p3~0,p4~0,p5~0,p6~1,p7~0,p8~0) + rNanog() g2Nanog
+    Nanog(p1~1,p2~0,p3~0,p4~1,p5~0,p6~0,p7~0,p8~0) -> Nanog(p1~1,p2~0,p3~0,p4~1,p5~0,p6~0,p7~0,p8~0) + rNanog() g1Nanog
+    Nanog(p1~1,p2~0,p3~0,p4~0,p5~1,p6~0,p7~0,p8~0) -> Nanog(p1~1,p2~0,p3~0,p4~0,p5~1,p6~0,p7~0,p8~0) + rNanog() g0
+    Nanog(p1~1,p2~0,p3~0,p4~0,p5~0,p6~1,p7~0,p8~0) -> Nanog(p1~1,p2~0,p3~0,p4~0,p5~0,p6~1,p7~0,p8~0) + rNanog() g1Nanog
+    Nanog(p1~0,p2~0,p3~0,p4~1,p5~1,p6~0,p7~0,p8~0) -> Nanog(p1~0,p2~0,p3~0,p4~1,p5~1,p6~0,p7~0,p8~0) + rNanog() g1Nanog
+    Nanog(p1~0,p2~0,p3~0,p4~1,p5~0,p6~1,p7~0,p8~0) -> Nanog(p1~0,p2~0,p3~0,p4~1,p5~0,p6~1,p7~0,p8~0) + rNanog() g2Nanog
+    Nanog(p1~0,p2~0,p3~0,p4~1,p5~0,p6~1,p7~0,p8~0) -> Nanog(p1~0,p2~0,p3~0,p4~1,p5~0,p6~1,p7~0,p8~0) + rNanog() g2Nanog
+    Nanog(p1~0,p2~0,p3~0,p4~0,p5~1,p6~1,p7~0,p8~0) -> Nanog(p1~0,p2~0,p3~0,p4~0,p5~1,p6~1,p7~0,p8~0) + rNanog() g1Nanog
+    Nanog(p1~1,p2~0,p3~0,p4~1,p5~1,p6~0,p7~0,p8~0) -> Nanog(p1~1,p2~0,p3~0,p4~1,p5~1,p6~0,p7~0,p8~0) + rNanog() g0
+    Nanog(p1~1,p2~0,p3~0,p4~1,p5~0,p6~1,p7~0,p8~0) -> Nanog(p1~1,p2~0,p3~0,p4~1,p5~0,p6~1,p7~0,p8~0) + rNanog() g2Nanog
+    Nanog(p1~1,p2~0,p3~0,p4~0,p5~1,p6~1,p7~0,p8~0) -> Nanog(p1~1,p2~0,p3~0,p4~0,p5~1,p6~1,p7~0,p8~0) + rNanog() g0
+    Nanog(p1~0,p2~0,p3~0,p4~1,p5~1,p6~1,p7~0,p8~0) -> Nanog(p1~0,p2~0,p3~0,p4~1,p5~1,p6~1,p7~0,p8~0) + rNanog() g2Nanog
+    Nanog(p1~1,p2~0,p3~0,p4~1,p5~1,p6~1,p7~0,p8~0) -> Nanog(p1~1,p2~0,p3~0,p4~1,p5~1,p6~1,p7~0,p8~0) + rNanog() g1Nanog
+    rNanog() -> 0 k
+    Pbx1(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~0,p8~0) -> Pbx1(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~0,p8~0) + rPbx1() g1Pbx1
+    Pbx1(p1~0,p2~0,p3~0,p4~0,p5~1,p6~0,p7~0,p8~0) -> Pbx1(p1~0,p2~0,p3~0,p4~0,p5~1,p6~0,p7~0,p8~0) + rPbx1() g2Pbx1
+    rPbx1() -> 0 k
+    Oct4(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~0,p8~0) -> Oct4(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~0,p8~0) + rOct4() g1Oct4
+    Oct4(p1~0,p2~1,p3~0,p4~0,p5~0,p6~0,p7~0,p8~0) -> Oct4(p1~0,p2~1,p3~0,p4~0,p5~0,p6~0,p7~0,p8~0) + rOct4() g0
+    Oct4(p1~0,p2~0,p3~1,p4~0,p5~0,p6~0,p7~0,p8~0) -> Oct4(p1~0,p2~0,p3~1,p4~0,p5~0,p6~0,p7~0,p8~0) + rOct4() g0
+    Oct4(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~1,p8~0) -> Oct4(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~1,p8~0) + rOct4() g2Oct4
+    Oct4(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~0,p8~1) -> Oct4(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~0,p8~1) + rOct4() g2Oct4
+    Oct4(p1~0,p2~1,p3~1,p4~0,p5~0,p6~0,p7~0,p8~0) -> Oct4(p1~0,p2~1,p3~1,p4~0,p5~0,p6~0,p7~0,p8~0) + rOct4() g0
+    Oct4(p1~0,p2~1,p3~0,p4~0,p5~0,p6~0,p7~1,p8~0) -> Oct4(p1~0,p2~1,p3~0,p4~0,p5~0,p6~0,p7~1,p8~0) + rOct4() g1Oct4
+    Oct4(p1~0,p2~1,p3~0,p4~0,p5~0,p6~0,p7~0,p8~1) -> Oct4(p1~0,p2~1,p3~0,p4~0,p5~0,p6~0,p7~0,p8~1) + rOct4() g1Oct4
+    Oct4(p1~0,p2~0,p3~1,p4~0,p5~0,p6~0,p7~1,p8~0) -> Oct4(p1~0,p2~0,p3~1,p4~0,p5~0,p6~0,p7~1,p8~0) + rOct4() g1Oct4
+    Oct4(p1~0,p2~0,p3~1,p4~0,p5~0,p6~0,p7~0,p8~1) -> Oct4(p1~0,p2~0,p3~1,p4~0,p5~0,p6~0,p7~0,p8~1) + rOct4() g1Oct4
+    Oct4(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~1,p8~1) -> Oct4(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~1,p8~1) + rOct4() g2Oct4
+    Oct4(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~1,p8~1) -> Oct4(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~1,p8~1) + rOct4() g2Oct4
+    Oct4(p1~0,p2~1,p3~1,p4~0,p5~0,p6~0,p7~1,p8~0) -> Oct4(p1~0,p2~1,p3~1,p4~0,p5~0,p6~0,p7~1,p8~0) + rOct4() g0
+    Oct4(p1~0,p2~1,p3~1,p4~0,p5~0,p6~0,p7~0,p8~1) -> Oct4(p1~0,p2~1,p3~1,p4~0,p5~0,p6~0,p7~0,p8~1) + rOct4() g0
+    Oct4(p1~0,p2~1,p3~0,p4~0,p5~0,p6~0,p7~1,p8~1) -> Oct4(p1~0,p2~1,p3~0,p4~0,p5~0,p6~0,p7~1,p8~1) + rOct4() g2Oct4
+    Oct4(p1~0,p2~0,p3~1,p4~0,p5~0,p6~0,p7~1,p8~1) -> Oct4(p1~0,p2~0,p3~1,p4~0,p5~0,p6~0,p7~1,p8~1) + rOct4() g2Oct4
+    Oct4(p1~0,p2~1,p3~1,p4~0,p5~0,p6~0,p7~1,p8~1) -> Oct4(p1~0,p2~1,p3~1,p4~0,p5~0,p6~0,p7~1,p8~1) + rOct4() g1Oct4
+    rOct4() -> 0 k
+    Sox2(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~0,p8~0) -> Sox2(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~0,p8~0) + rSox2() g1Sox2
+    Sox2(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~1,p8~0) -> Sox2(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~1,p8~0) + rSox2() g2Sox2
+    Sox2(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~0,p8~1) -> Sox2(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~0,p8~1) + rSox2() g2Sox2
+    Sox2(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~1,p8~1) -> Sox2(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~1,p8~1) + rSox2() g2Sox2
+    Sox2(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~1,p8~1) -> Sox2(p1~0,p2~0,p3~0,p4~0,p5~0,p6~0,p7~1,p8~1) + rSox2() g2Sox2
+    rSox2() -> 0 k
+end reaction rules 
+end model
+
+generate_network({overwrite=>1})
+simulate_ssa({t_start=>0,t_end=>15000,n_steps=>5000})

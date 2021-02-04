@@ -1,5 +1,5 @@
-#This script is meant to be run on HPC3
-#Clark Wey 10/18/20
+#This script is meant to be run on HPC3 or Windows 10
+#Clark Wey 1/20/21
 
 import os
 import shutil
@@ -31,7 +31,7 @@ else:
    sys.exit()
 
 
-sim_name = 'Pluripotency_Mouse_Change.bngl' #name of the BNG simulation
+sim_name = 'TestNetwork3.bngl' #name of the BNG simulation
 path_to_model = os.path.join(project_path, 'Models', sim_name)
 current_wd = os.getcwd()
 
